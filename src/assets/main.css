@@ -528,6 +528,7 @@ body {
 }
 
 .contacts__content {
+  padding-right: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -573,7 +574,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
-  color: #fff;
+  color: red;
+  margin: 10px 0;
 }
 .contacts__content_form .form-submit {
   width: 194px;
@@ -597,7 +599,7 @@ body {
 }
 .contacts__content-info .info {
   width: 605px;
-  height: 474px;
+  height: 100%;
   margin: 0 auto;
 }
 .contacts__content-info .info .info__title {

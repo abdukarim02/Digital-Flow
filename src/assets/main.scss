@@ -431,6 +431,7 @@ body {
 }
 .contacts {
     &__content {
+        padding-right: 20px;
         @include stylcenter(flex, center, space-between);
         background: #000;
         &_form {
@@ -461,7 +462,8 @@ body {
                 }
             }
             .error-message {
-                @include stylefontz($font-family, 500, 14px, #fff);
+                @include stylefontz($font-family, 500, 14px, red);
+                margin: 10px 0;
             }
             .form-submit {
                 width: 194px;
@@ -486,7 +488,7 @@ body {
         height: 100%;
         .info {
             width: 605px;
-            height: 474px;
+            height: 100%;
             margin: 0 auto;
             .info__title {
                 margin-bottom: 130px;
