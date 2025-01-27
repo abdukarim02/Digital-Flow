@@ -377,6 +377,7 @@ body {
 }
 .advantages {
     width: 100%;
+    height: 100vh;
     background-image: url(/src/img/services-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -396,19 +397,169 @@ body {
             }
         }
         &_wrap {
+            @include stylcenter(flex, center, space-between);
+            flex-wrap: wrap;
+            gap: 60px;
         }
         &_wrap-flex {
+            width: 46%;
         }
     }
     &__content-title {
+        margin: 105px 0 90px;
     }
     &__flex {
+        @include stylcenter(flex, center, center);
+        gap: 20px;
     }
     &__flex-bg {
+        width: 50px;
+        height: 50px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
     &__flex-info {
+        width: 430px;
+        p {
+            @include stylefontz($font-family, 500, 16px, #1a1f25);
+            line-height: 24px;  
+        }
     }
 }
+.contacts {
+    &__content {
+        @include stylcenter(flex, center, space-between);
+        background: #000;
+        &_form {
+            width: 50%;
+            height: 100%;
+            background-image: url(../img/contacts-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            .form {
+                width: 509px;
+                height: 594px;
+                margin: 170px auto;
+                &__group {
+                    @include stylcenter(flex, start, space-between);
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                }
+                &__group-name {
+                    @include stylefontz($font-family, 500, 16px, #fff);
+                }
+                &__group-text {
+                    width: 100%;
+                    background: transparent;
+                    padding: 40px 10px 20px;
+                    border-bottom: 1px solid #fff;
+                    @include stylefontz($font-family, 500, 14px, #fff);
+                }
+            }
+            .error-message {
+                @include stylefontz($font-family, 500, 14px, #fff);
+            }
+            .form-submit {
+                width: 194px;
+                color: #fff;
+                border: 1px solid #fff;
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+                svg {
+                    fill: #fff;
+                    &:hover {
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
+    &__content-info {
+        background: #000201;
+        width: 50%;
+        height: 100%;
+        .info {
+            width: 605px;
+            height: 474px;
+            margin: 0 auto;
+            .info__title {
+                margin-bottom: 130px;
+            }
+            &__wrap {
+                @include stylcenter(flex, start, space-between);
+                flex-wrap: wrap;
+                &_flex {
+                    position: relative;
+                    width: 32%;
+                    height: 284px;
+                    background-image: url(../img/contacts-products.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    z-index: 2;
+                    transition: all 0.3s ease;
+                    &:hover::after {
+                        opacity: 1;
+                    }
+                    &::after {
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(../img/contacts-products-1.png);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        z-index: 1;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        transition: all 0.3s ease-in;
+                    }
+                    .flex {
+                        margin-top: 65px;
+                        padding: 0 15px;
+                        position: relative;
+                        z-index: 3;
+                        @include stylcenter(flex, start, space-between);
+                        flex-direction: column;
+                        &__name {
+                            @include stylefontz($font-family, 500, 20px, #fff);
+                        }
+                        &__text {
+                            padding: 15px 0 45px;
+                            @include stylefontz($font-family, 500, 16px, #fff);
+                            line-height: 1.2;
+                        }
+                        &__discount {
+                            @include stylefontz($font-family, 500, 14px, #fff);
+                            text-decoration: line-through;
+                            padding-bottom: 5px;
+                        }
+                        &__price {
+                            @include stylefontz($font-family, 500, 24px, #fff);
+                        }
+                    }
+                    .link {
+                        position: absolute;
+                        z-index: 4;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .info__title {
+        color: #fff;
+        margin-bottom: 80px;
+    }
+}
+
 @media (max-width: 1024px) {
     .header__content_menu-body {
         width: 50vw;
@@ -455,6 +606,12 @@ body {
         &-info {
             width: 100%;
             padding: 0 10px; 
+        }
+    }
+    .advantages {
+        height: 100%;
+        &__content_wrap-flex {
+            width: 40%;
         }
     }
 }

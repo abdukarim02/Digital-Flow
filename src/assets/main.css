@@ -465,6 +465,7 @@ body {
 
 .advantages {
   width: 100%;
+  height: 100vh;
   background-image: url(/src/img/services-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,6 +487,204 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.advantages__content_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.advantages__content_wrap-flex {
+  width: 46%;
+}
+.advantages__content-title {
+  margin: 105px 0 90px;
+}
+.advantages__flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.advantages__flex-bg {
+  width: 50px;
+  height: 50px;
+}
+.advantages__flex-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.advantages__flex-info {
+  width: 430px;
+}
+.advantages__flex-info p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1a1f25;
+  line-height: 24px;
+}
+
+.contacts__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+}
+.contacts__content_form {
+  width: 50%;
+  height: 100%;
+  background-image: url(../img/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.contacts__content_form .form {
+  width: 509px;
+  height: 594px;
+  margin: 170px auto;
+}
+.contacts__content_form .form__group {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.contacts__content_form .form__group-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.contacts__content_form .form__group-text {
+  width: 100%;
+  background: transparent;
+  padding: 40px 10px 20px;
+  border-bottom: 1px solid #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+.contacts__content_form .error-message {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+.contacts__content_form .form-submit {
+  width: 194px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.contacts__content_form .form-submit:hover {
+  background: #fff;
+  color: #000;
+}
+.contacts__content_form .form-submit svg {
+  fill: #fff;
+}
+.contacts__content_form .form-submit svg:hover {
+  fill: #000;
+}
+.contacts__content-info {
+  background: #000201;
+  width: 50%;
+  height: 100%;
+}
+.contacts__content-info .info {
+  width: 605px;
+  height: 474px;
+  margin: 0 auto;
+}
+.contacts__content-info .info .info__title {
+  margin-bottom: 130px;
+}
+.contacts__content-info .info__wrap {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacts__content-info .info__wrap_flex {
+  position: relative;
+  width: 32%;
+  height: 284px;
+  background-image: url(../img/contacts-products.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+.contacts__content-info .info__wrap_flex:hover::after {
+  opacity: 1;
+}
+.contacts__content-info .info__wrap_flex::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/contacts-products-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.contacts__content-info .info__wrap_flex .flex {
+  margin-top: 65px;
+  padding: 0 15px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.contacts__content-info .info__wrap_flex .flex__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+.contacts__content-info .info__wrap_flex .flex__text {
+  padding: 15px 0 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+.contacts__content-info .info__wrap_flex .flex__discount {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: line-through;
+  padding-bottom: 5px;
+}
+.contacts__content-info .info__wrap_flex .flex__price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+.contacts__content-info .info__wrap_flex .link {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+.contacts .info__title {
+  color: #fff;
+  margin-bottom: 80px;
+}
+
 @media (max-width: 1024px) {
   .header__content_menu-body {
     width: 50vw;
@@ -531,6 +730,12 @@ body {
   .about__company_swiper_content-info {
     width: 100%;
     padding: 0 10px;
+  }
+  .advantages {
+    height: 100%;
+  }
+  .advantages__content_wrap-flex {
+    width: 40%;
   }
 }
 @media (max-width: 425px) {
