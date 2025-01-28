@@ -561,6 +561,88 @@ body {
         margin-bottom: 80px;
     }
 }
+.footer {
+    background: #17181c;
+    &__content {
+        padding: 103px 0;
+        &_top {
+            @include stylcenter(flex, center, space-between);
+        }
+        &_bottom {
+            margin-top: 45px;
+            padding-top: 45px;
+            border-top: 1px solid #595959;
+            @include stylcenter(flex, center, space-between);
+        }
+        &_bottom-logo {
+            svg {
+                fill: #e6e6e6;
+            }
+        }
+        &_bottom-social {
+            @include stylcenter(flex, center, space-between);
+            gap: 10px;
+            li {
+                list-style: none;
+                a {
+                    border-radius: 5px;
+                    width: 30px;
+                    height: 30px;
+                    @include stylcenter(flex, center, center);
+                    transform: scale(1);
+                    transition: all 0.3s ease-in;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                    background: #fff;
+                    svg {
+                        fill: #17181c;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu {
+    width: 100%;
+    @include stylcenter(flex, center, space-between);
+    &__info {
+        @include stylcenter(flex, start, space-between);
+        flex-direction: column;
+        width: 266px;
+        height: 223px;
+        &_list {
+            list-style: none;
+        }
+        &_list-link {
+            @include stylefontz($font-family, 400, 16px,  #e6e6e6);
+        }
+    }
+    &__info-title {
+        @include stylefontz($font-family, 500, 20px,  #e6e6e6);
+    }
+    &__info-text {
+        @include stylefontz($font-family, 400, 16px,  #e6e6e6);
+    }
+    &__contacts {
+        @include stylcenter(flex, start, space-between);
+        flex-direction: column;
+        width: 266px;
+        height: 223px;
+        &_item {
+            height: 123px;
+            @include stylcenter(flex, start, space-between);
+            flex-direction: column;
+        }
+        &_item-list {
+            a {
+                @include stylcenter(flex, start, space-between);
+                gap: 17px;
+                @include stylefontz($font-family, 400, 16px,  #e6e6e6);
+            }
+        }
+    }
+}
 
 @media (max-width: 1024px) {
     .header__content_menu-body {

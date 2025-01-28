@@ -687,6 +687,116 @@ body {
   margin-bottom: 80px;
 }
 
+.footer {
+  background: #17181c;
+}
+.footer__content {
+  padding: 103px 0;
+}
+.footer__content_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content_bottom {
+  margin-top: 45px;
+  padding-top: 45px;
+  border-top: 1px solid #595959;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content_bottom-logo svg {
+  fill: #e6e6e6;
+}
+.footer__content_bottom-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer__content_bottom-social li {
+  list-style: none;
+}
+.footer__content_bottom-social li a {
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+  background: #fff;
+}
+.footer__content_bottom-social li a:hover {
+  transform: scale(1.2);
+}
+.footer__content_bottom-social li a svg {
+  fill: #17181c;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__info {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 266px;
+  height: 223px;
+}
+.menu__info_list {
+  list-style: none;
+}
+.menu__info_list-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #e6e6e6;
+}
+.menu__info-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #e6e6e6;
+}
+.menu__info-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #e6e6e6;
+}
+.menu__contacts {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 266px;
+  height: 223px;
+}
+.menu__contacts_item {
+  height: 123px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menu__contacts_item-list a {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #e6e6e6;
+}
+
 @media (max-width: 1024px) {
   .header__content_menu-body {
     width: 50vw;

@@ -36,23 +36,23 @@
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
-// export default {
-//       components: {
-//         Swiper,
-//         SwiperSlide,
-//       },
-//       setup() {
-//         const onSwiper = (swiper) => {
-//           console.log(swiper);
-//         };
-//         const onSlideChange = () => {
-//           console.log('slide change');
-//         };
-//         return {
-//           onSwiper,
-//           onSlideChange,
-//           modules: [Navigation, Pagination, Scrollbar, A11y],
-//         };
-//       },
-//     };
+//   export default {
+//         components: {
+//           Swiper,
+//           SwiperSlide,
+//         },
+//         setup() {
+//           const onSwiper = (swiper) => {
+//             console.log(swiper);
+//           };
+//           const onSlideChange = () => {
+//             console.log('slide change');
+//           };
+//           return {
+//             onSwiper,
+//             onSlideChange,
+//             modules: [Navigation, Pagination, Scrollbar, A11y],
+//           };
+//         },
+//       };
 </script>
