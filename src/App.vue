@@ -8,8 +8,6 @@ import Advantages from './components/Advantages.vue';
 import Contacts from './components/Contacts.vue';
 import ConfirmationModal from './components/ConfirmationModal.vue';
 import Footer from './components/Footer.vue';
-
-
 </script>
 
 <template>
