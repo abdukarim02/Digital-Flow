@@ -84,6 +84,7 @@ body {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 10px;
+  overflow: hidden;
 }
 
 .btn {
@@ -639,13 +640,13 @@ body {
   transition: all 0.3s ease-in;
 }
 .contacts__content-info .info__wrap_flex .flex {
-  margin-top: 65px;
+  height: 100%;
   padding: 0 15px;
   position: relative;
   z-index: 3;
   display: flex;
   align-items: start;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
 }
 .contacts__content-info .info__wrap_flex .flex__name {
@@ -795,6 +796,84 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #e6e6e6;
+}
+
+.confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  background-image: url(../img/confirmation-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+}
+.confirmation__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.confirmation__content-forma {
+  background: #f9f8f4;
+  width: 660px;
+  height: 450px;
+}
+.confirmation__content-forma .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: column;
+}
+.confirmation__content-forma .form .form-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background: #79b5a5;
+  margin-top: 30px;
+}
+.confirmation__content-forma .form__info-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #212733;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.confirmation__content-forma .form__info-text {
+  width: 386px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #212733;
+  line-height: 24px;
+  text-align: center;
+}
+.confirmation__content-forma .form__footer {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/confirmation-footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 55px 0;
+}
+.confirmation__content-forma .form__footer-btn {
+  margin: 0 auto;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.confirmation__content-forma .form__footer-btn svg {
+  fill: #fff;
 }
 
 @media (max-width: 1024px) {
